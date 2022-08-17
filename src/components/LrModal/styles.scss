@@ -1,0 +1,24 @@
+@import "../../styles/typography.scss";
+
+.lr-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrap {
+    margin: 0 16px;
+    padding: 16px;
+    background: var(--light100);
+    border-radius: 8px;
+    position: relative;
+  }
+
+  &__title {
+    @include TitleMMedium;
+    padding-right: 32px;
+  }
+
+  .lr-close-button {
+    color: var(--text);
+  }
+}

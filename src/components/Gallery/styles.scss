@@ -1,0 +1,177 @@
+@import "../../styles/screens";
+@import "../../styles/mixins";
+@import "../../styles/colors";
+@import "../LrButton/styles";
+@import "../LrIco/styles";
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    width: inherit;
+  }
+
+  &.small {
+    width: max-content;
+    .swiper {
+      @include rect(328px, 212px);
+    }
+  }
+
+  &.fs-mode {
+    flex-direction: row;
+    background-color: var(--brand5);
+
+    .swiper {
+      @include rect(960px, 584px);
+      margin: 0 auto;
+
+      &.swiper__thumbs {
+        width: 960px;
+        height: 60px;
+      }
+    }
+
+    .close-fullscreen {
+      display: block;
+      position: absolute;
+      @include square(18px);
+      right: 23px;
+      top: 17px;
+      background-color: transparent;
+
+      &:hover,
+      &:active {
+        background-color: transparent;
+      }
+    }
+
+    //.swiper-button {
+    //  &-prev,
+    //  &-next {
+    //    top: unset;
+    //    position: relative;
+    //    left: 0;
+    //    right: 0;
+    //  }
+    //}
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+
+  .swiper {
+    //@include rect(477px, 287px);
+    width: 100%;
+    height: 400px;
+
+    .swiper-slide {
+
+      .slide {
+        border-radius: 12px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.swiper__main-in-slider {
+
+      .swiper-slide {
+
+        .slide {
+          @include square(100%);
+          border-radius: 12px 12px 0 0;
+        }
+      }
+    }
+  }
+
+  .close-fullscreen {
+    display: none;
+  }
+
+  .swiper-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+
+    .btn {
+      background-color: var(--light60);
+      transition: all 0.3s ease;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include touchscreen {
+      display: none;
+    }
+
+    &-prev {
+      left: 8px;
+    }
+
+    &-next {
+      right: 8px;
+    }
+
+    &:hover {
+
+      .btn {
+        background-color: var(--primary-hover);
+      }
+
+      svg {
+        fill: var(--light100)
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    margin-top: 16px;
+    display: flex;
+    gap: 4px;
+
+    &-bullet {
+      @include square(6px);
+      display: block;
+      background-color: var(--secondary10);
+      border-radius: 50%;
+
+      &-active {
+        background-color: var(--primary-hover);
+      }
+    }
+  }
+}
+
+.swiper__thumbs.swiper {
+  margin-top: 4px;
+  height: 54px;
+  .swiper-wrapper {
+
+  }
+
+  .swiper-slide {
+
+    .slide {
+      border-radius: 0;
+    }
+  }
+}

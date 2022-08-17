@@ -1,0 +1,44 @@
+@import "../../styles/typography.scss";
+
+.lr-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    padding: 16px;
+    background: var(--light100);
+    border-radius: 8px;
+    position: relative;
+    max-width: 400px;
+    width: 400px;
+  }
+
+  &__title {
+    @include TitleMMedium;
+    padding-right: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+
+    .btn {
+      width: 100%;
+    }
+
+    & > *:nth-child(n + 2) {
+      margin-top: 8px;
+    }
+  }
+
+  .lr-close-button {
+    color: var(--text);
+  }
+}

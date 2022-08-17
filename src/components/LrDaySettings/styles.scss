@@ -1,0 +1,204 @@
+@import "../../styles/typography.scss";
+
+.lr-day-settings {
+  background-color: var(--secondary1);
+  border: 1px solid var(--secondary10);
+  display: flex;
+  flex-direction: column;
+  height: 89px;
+  width: 100%;
+  padding: 8px 16px 16px;
+  position: relative;
+  border-radius: 8px;
+
+  &__slider {
+    margin-top: auto;
+    margin-left: -14px;
+    margin-right: -14px;
+    margin-bottom: 7px;
+  }
+
+  &__dot-slider {
+    background-color: var(--light100);
+    box-shadow: none;
+    border: 1px solid var(--secondary30);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: var(--secondary50);
+
+      ~ .lr-day-settings__dot-value {
+        display: none;
+      }
+
+      .lr-day-settings__dot-trash {
+        display: block;
+      }
+    }
+  }
+
+  &__dot-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__dot-trash {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: none;
+    fill: var(--secondary20);
+    height: 25px;
+    width: 28px;
+
+    svg {
+      transform: translateX(7px);
+      width: 14px;
+      height: 14px;
+
+      &:hover {
+        fill: var(--brand1)
+      }
+    }
+  }
+
+  &__dot-value {
+    position: absolute;
+    top: -18px;
+    //left: 100%;
+    transform: translateX(-100%);
+    @include CaptionSRegular;
+    white-space: nowrap;
+  }
+
+  &__interval-fee {
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    transform: translateX(-50%);
+    @include CaptionSRegular;
+    color: var(--brand1);
+    border-bottom: 1px dotted var(--brand1);
+    cursor: pointer;
+  }
+
+  .vue-slider-process {
+    background-color: transparent;
+    transition-duration: 0s !important;
+  }
+
+  .vue-slider-dot {
+    transition: none !important;
+  }
+
+  .vue-slider-mark {
+
+    &:last-child, &:first-child {
+      background-color: transparent;
+      border: none
+    }
+
+    &__icon {
+      transition: background-color .1s ease;
+      cursor: pointer;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: 1px solid var(--secondary20);
+      background-color: var(--light100);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        width: 14px !important;
+        height: 14px !important;
+        background-color: var(--brand1);
+        border: none;
+
+        .vue-slider-mark__icon {
+          display: block;
+        }
+      }
+    }
+
+    &__additional-point {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--light100);
+      box-shadow: none;
+      border: 1px solid var(--secondary30);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .lr-day-settings__dot-value {
+        transform: translateX(0);
+        left: 50%;
+      }
+    }
+  }
+
+  .vue-slider-mark-label {
+    margin-top: 18px;
+    font-size: 10px;
+    color: var(--secondary30)
+  }
+
+  &__edit-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    & > *:nth-child(n+2) {
+      margin-left: 16px;
+    }
+
+    .lr-daily-cost__actions {
+      margin-left: 48px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    & > *:nth-child(n + 2) {
+      margin-left: 16px;
+    }
+  }
+
+  &__delete {
+    cursor: pointer;
+    color: var(--danger35);
+  }
+}

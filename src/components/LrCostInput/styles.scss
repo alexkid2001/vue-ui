@@ -1,0 +1,50 @@
+@import "../../styles/typography.scss";
+
+.lr-input {
+  position: relative;
+  @include CaptionLRegular;
+
+  &__input {
+    appearance: none;
+    background-color: var(--secondary1);
+    border: 1px solid var(--secondary20);
+    border-radius: 8px;
+    padding: 11px;
+    text-align: right;
+    width: 100%;
+
+    &:hover {
+      outline: none;
+      background-color: var(--secondary5);
+    }
+
+    &:active, &:focus {
+      outline: none;
+      background-color: var(--light100);
+    }
+  }
+
+  &__currency {
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translate(100%, -50%);
+  }
+
+  &--currency {
+
+    .lr-input {
+
+      &__input {
+        padding-right: 26px;
+      }
+    }
+
+    &.lr-input--warning {
+      .lr-input__input,
+      .lr-input__currency {
+        color: var(--danger35);
+      }
+    }
+  }
+}

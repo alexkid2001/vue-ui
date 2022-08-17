@@ -1,0 +1,35 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": "*.vue",
+      "options": {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "arrowParens": "avoid"
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "arrowParens": "avoid"
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "arrowParens": "avoid"
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "scss"
+      }
+    }
+  ]
+}

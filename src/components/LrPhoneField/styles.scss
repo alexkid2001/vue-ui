@@ -1,0 +1,62 @@
+@import "../../styles/typography";
+
+.lr-phone-field {
+  display: flex;
+  flex-direction: column;
+  &__wrap {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  & > * {
+    width: 100%;
+  }
+  .field--phone-field {
+    & .field__input {
+      display: flex;
+      flex: 1 1 auto;
+      border-left: none;
+      border-radius: 0.5rem;
+      transition: none;
+    }
+    &:not(.open) {
+      & .field__input {
+        border-radius: 0 0.5rem 0.5rem 0;
+      }
+    }
+  }
+
+  .select {
+    display: flex;
+    flex: 0 1 120px;
+
+    &.open {
+      position: absolute;
+      width: 250px;
+      & .select__field {
+        position: relative;
+        z-index: 1;
+      }
+      .field--phone-field {
+        & .field__input {
+          border-radius: 0.5rem;
+        }
+      }
+    }
+
+    & .select__field {
+      display: flex;
+      flex: 1 1 auto;
+    }
+
+    & .field__input {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+  }
+
+  &__error-message {
+    display: inline-block;
+    margin-top: 0.5rem;
+    @include CaptionSRegular;
+    color: var(--danger35);
+  }
+}

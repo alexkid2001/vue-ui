@@ -1,0 +1,39 @@
+@import "../../styles/typography.scss";
+
+.field {
+  &__currency {
+    position: absolute;
+    right: 23px;
+    bottom: 6px;
+    transform: translateX(100%);
+  }
+
+  &--currency {
+
+    .field {
+
+      &__input {
+        padding-right: 26px;
+        text-align: right;
+      }
+    }
+
+    &.lr-input--warning {
+      .field__input,
+      .field__currency {
+        color: var(--danger35);
+      }
+    }
+
+    &.field--medium {
+      .field__currency {
+        bottom: 8px;
+      }
+    }
+    &.field--small {
+      .field__currency {
+        bottom: 4px;
+      }
+    }
+  }
+}

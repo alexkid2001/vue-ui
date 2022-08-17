@@ -1,0 +1,25 @@
+.field--time-input {
+
+  .field {
+
+    &__input {
+      background-color: var(--secondary1);
+      border: 1px solid var(--secondary10);
+      border-radius: 8px;
+      padding: 24px 16px 9px;
+      height: 56px;
+
+      &:not(&:placeholder-shown)  {
+        &:hover {
+          background-color: var(--secondary1);
+          border: 1px solid var(--secondary10);
+        }
+
+        &:active, &:focus {
+          background-color: var(--secondary1);
+          border: 1px solid var(--secondary10);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import "../../styles/typography";
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 0.4rem 0;
+
+  &__input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid var(--input-border);
+    background-color: var(--secondary1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12.94px;
+    border-radius: 3px;
+    color-adjust: exact;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:checked {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='19.41423' height='13.724678' viewBox='0 0 19.41423 13.724678' style='fill:none'%3e%3cpath d='M 7.457111,13.724678 0,6.267598 1.767581,4.500008 7.457091,10.188778 17.646631,0 l 1.7676,1.767598 z' style='clip-rule:evenodd;fill:%23ffff;fill-rule:evenodd'/%3e%3c/svg%3e");
+      background-color: var(--primary);
+      border: 1px solid var(--primary);
+
+      &:active {
+        background-color: var(--primary-active);
+        border-color: var(--primary-active);
+      }
+    }
+
+  }
+
+  &__label {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    @include BodySRegular;
+  }
+  
+  &:hover {
+    .checkbox__input:not(:checked) {
+      background-color: var(--secondary5);
+    }
+  }
+
+  &.error {
+
+    .checkbox__input {
+      border-color: var(--danger25);
+      background-color: var(--danger2);
+
+      &:checked {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='19.41423' height='13.724678' viewBox='0 0 19.41423 13.724678' style='fill:none'%3e%3cpath d='M 7.457111,13.724678 0,6.267598 1.767581,4.500008 7.457091,10.188778 17.646631,0 l 1.7676,1.767598 z' style='clip-rule:evenodd;fill:%23FF8080;fill-rule:evenodd'/%3e%3c/svg%3e");
+        border: 1px solid var(--danger25);
+        &:active {
+          border-color: var(--danger25);
+        }
+      }
+    }
+
+    &:hover, &:checked {
+
+      .checkbox__input {
+        background-color: var(--danger5);
+      }
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+
+    .checkbox__input {
+      background-color: var(--secondary5);
+      border: 1px solid var(--secondary5);
+
+      &:checked {
+        background-color: var(--secondary20);
+        border: 1px solid transparent;
+      }
+    }
+  }
+
+  &--sm {
+    .checkbox__label {
+      @include CaptionSRegular;
+      margin-top: 0.3rem;
+    }
+  }
+}

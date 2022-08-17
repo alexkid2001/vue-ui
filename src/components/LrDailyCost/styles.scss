@@ -1,0 +1,160 @@
+@import "../../styles/typography.scss";
+
+.lr-daily-cost {
+  background-color: var(--secondary1);
+  border: 1px solid var(--secondary10);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 8px 16px;
+  position: relative;
+  border-radius: 8px;
+
+  &__slider {
+    margin-top: 20px;
+    margin-left: -14px;
+    margin-right: -14px;
+    margin-bottom: 24px;
+  }
+
+  &__dot-slider {
+    background-color: var(--light100);
+    box-shadow: none;
+    border: 1px solid var(--secondary30);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: var(--secondary50);
+    }
+  }
+
+  &__dot-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__dot-trash {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: none;
+
+    svg {
+      path {
+        fill: var(--secondary20);
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--brand1)
+        }
+      }
+    }
+  }
+
+  &__dot-value {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include CaptionSRegular;
+  }
+
+  &__interval-fee {
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    transform: translateX(-50%);
+    @include CaptionSRegular;
+    color: var(--brand1);
+    border-bottom: 1px dotted var(--brand1);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .vue-slider-process {
+    background-color: transparent;
+    transition-duration: 0s !important;
+  }
+
+  .vue-slider-dot {
+    transition: none !important;
+  }
+
+  .vue-slider-mark {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color .1s ease;
+    cursor: pointer;
+
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--brand1);
+
+      .vue-slider-mark__icon {
+        display: block;
+      }
+
+      .vue-slider-mark-label {
+        display: block;
+      }
+    }
+  }
+
+  .vue-slider-mark-label {
+    display: none;
+    margin-top: 12px;
+    @include CaptionSRegular;
+  }
+
+  &__edit-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    & > *:nth-child(n+2) {
+      margin-left: 16px;
+    }
+
+    .lr-daily-cost__actions {
+      margin-left: 48px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    & > *:nth-child(n + 2) {
+      margin-left: 16px;
+    }
+  }
+
+  &__delete {
+    cursor: pointer;
+    color: var(--danger35);
+  }
+}

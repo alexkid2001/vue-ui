@@ -1,0 +1,21 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="BR">
+<rect id="Mask" width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_26538_62232" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_26538_62232)">
+<rect id="Mask Copy" width="28" height="20" fill="#05AB41"/>
+<path id="Rectangle 60" fill-rule="evenodd" clip-rule="evenodd" d="M3.53169 10.5598C3.12569 10.2971 3.12569 9.7031 3.53169 9.4404L13.6378 2.90112C13.8582 2.75852 14.1418 2.75852 14.3622 2.90112L24.4683 9.4404C24.8743 9.7031 24.8743 10.2971 24.4683 10.5598L14.3622 17.0991C14.1418 17.2417 13.8582 17.2417 13.6378 17.0991L3.53169 10.5598Z" fill="#FDD216"/>
+<g id="Oval 2">
+<path id="Mask_3" fill-rule="evenodd" clip-rule="evenodd" d="M13.9999 14.6668C16.5772 14.6668 18.6666 12.5775 18.6666 10.0002C18.6666 7.42283 16.5772 5.3335 13.9999 5.3335C11.4226 5.3335 9.33325 7.42283 9.33325 10.0002C9.33325 12.5775 11.4226 14.6668 13.9999 14.6668Z" fill="#053087"/>
+<mask id="mask1_26538_62232" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="5" width="10" height="10">
+<path id="Mask_4" fill-rule="evenodd" clip-rule="evenodd" d="M13.9999 14.6668C16.5772 14.6668 18.6666 12.5775 18.6666 10.0002C18.6666 7.42283 16.5772 5.3335 13.9999 5.3335C11.4226 5.3335 9.33325 7.42283 9.33325 10.0002C9.33325 12.5775 11.4226 14.6668 13.9999 14.6668Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_26538_62232)">
+<path id="Line" d="M8.77987 8.78057C9.51257 8.18724 11.8769 8.74931 14.084 9.33806C16.291 9.9268 18.5929 11.1608 19.179 11.8846" stroke="white" stroke-width="1.33333" stroke-linecap="square"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

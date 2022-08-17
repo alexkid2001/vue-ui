@@ -1,0 +1,15 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="BN">
+<rect id="Mask" width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_26538_62247" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_26538_62247)">
+<rect id="Mask Copy" width="28" height="20" fill="#F7E250"/>
+<g id="Rectangle 2 Copy 4 + Rectangle 2 Copy 4">
+<path id="Rectangle 2 Copy 4" fill-rule="evenodd" clip-rule="evenodd" d="M-4.1674 3.38768L32.1674 16.6125L33.5355 12.8537L-2.79932 -0.371094L-4.1674 3.38768Z" fill="white"/>
+<path id="Rectangle 2 Copy 4_2" fill-rule="evenodd" clip-rule="evenodd" d="M-5.53556 7.14647L30.7992 20.3712L32.1673 16.6125L-4.16748 3.3877L-5.53556 7.14647Z" fill="#262626"/>
+</g>
+</g>
+</g>
+</svg>

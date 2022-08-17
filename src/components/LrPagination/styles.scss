@@ -1,0 +1,82 @@
+@import "../../styles/typography.scss";
+
+.lr-pagination {
+  --transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__page {
+    color: var(--text);
+    background-color: var(--light100);
+    transition: var(--transition);
+    width: 48px;
+    height: 48px;
+    @include BodySMedium;
+    line-height: 50px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--light100);
+      background-color: var(--primary-hover);
+    }
+
+    &:active {
+      color: var(--light100);
+      background-color: var(--primary-active);
+    }
+  }
+
+  &__page-active {
+    background-color: var(--primary);
+    color: var(--light100);
+  }
+
+  &__control {
+    transition: var(--transition);
+    fill: var(--secondary50);
+    width: 25px;
+    height: 25px;
+  }
+
+  &__control-active {
+    fill: var(--text);
+    cursor: pointer;
+  }
+
+  &__dots-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 2px;
+    padding-top: 0.6em;
+    background-color: var(--light100);
+    border-radius: 8px;
+  }
+
+  &__dots {
+    width: 8px;
+    height: 4px;
+
+    path {
+      fill: var(--text);
+    }
+  }
+}

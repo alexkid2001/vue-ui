@@ -1,0 +1,16 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="MZ">
+<rect id="Mask" width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_26538_63200" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_26538_63200)">
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 19.9998H28V14.6665H0V19.9998Z" fill="#FFE547"/>
+<path id="Rectangle 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.33333H28V0H0V5.33333Z" fill="#118C81"/>
+<path id="Rectangle 2_3" fill-rule="evenodd" clip-rule="evenodd" d="M0 14.6668H28V5.3335H0V14.6668Z" fill="white"/>
+<path id="Rectangle 2_4" fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3332H28V6.6665H0V13.3332Z" fill="#262626"/>
+<path id="Rectangle 83" fill-rule="evenodd" clip-rule="evenodd" d="M0 0L13.3333 10L0 20V0Z" fill="#EF2147"/>
+<path id="Star 27" fill-rule="evenodd" clip-rule="evenodd" d="M4.66659 11.2739L2.7073 12.6966L3.45486 10.3935L1.4964 8.96978L3.9177 8.96909L4.66659 6.6665L5.41547 8.96909L7.83677 8.96978L5.87831 10.3935L6.62587 12.6966L4.66659 11.2739Z" fill="#FDE444"/>
+</g>
+</g>
+</svg>

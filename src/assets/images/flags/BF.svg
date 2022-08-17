@@ -1,0 +1,13 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="BF">
+<rect id="Mask" width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_26538_62259" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_26538_62259)">
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 19.9998H28V10.6665H0V19.9998Z" fill="#00B051"/>
+<path id="Rectangle 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 10.6667H28V0H0V10.6667Z" fill="#FA494B"/>
+<path id="Star 8" fill-rule="evenodd" clip-rule="evenodd" d="M14 12.2265L11.6489 13.9026L12.5164 11.1486L10.1958 9.43044L13.0831 9.40444L14 6.6665L14.917 9.40444L17.8043 9.43044L15.4837 11.1486L16.3512 13.9026L14 12.2265Z" fill="#FDD216"/>
+</g>
+</g>
+</svg>

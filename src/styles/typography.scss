@@ -1,0 +1,96 @@
+@mixin TitleXXLMedium {
+  font-size: 50px;
+  line-height: 1.02;
+  letter-spacing: -1px;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin TitleXLMedium {
+  font-size: 40px;
+  line-height: 1.02;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin TitleLMedium {
+  font-size: 30px;
+  line-height: 1.12;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin TitleMMedium {
+  font-size: 24px;
+  line-height: 1.12;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin TitleMRegular {
+  font-size: 24px;
+  line-height: 1.12;
+  font-family: 'Suissent Intl Regular', sans-serif;
+}
+
+@mixin TitleSMedium {
+  font-size: 20px;
+  line-height: 1.22;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin TitleSRegular {
+  font-size: 20px;
+  line-height: 1.22;
+  font-family: 'Suissent Intl Regular', sans-serif;
+}
+
+@mixin BodyLMedium {
+  font-size: 18px;
+  line-height: 1.22;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin BodyLRegular {
+  font-size: 18px;
+  line-height: 1.22;
+  font-family: 'Suissent Intl Regular', sans-serif;
+}
+
+@mixin BodySMedium {
+  font-size: 1rem; //16px;
+  line-height: 1.22;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin BodySRegular {
+  font-size: 1rem; //16px;
+  line-height: 1.22;
+  font-family: 'Suissent Intl Regular', sans-serif;
+}
+
+@mixin CaptionLMedium {
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin CaptionLRegular {
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: 'Suissent Intl Regular', sans-serif;
+}
+
+@mixin CaptionSMedium {
+  font-size: 0.75rem; //12px;
+  line-height: 1.12;
+  font-family: 'Suissent Intl Medium', sans-serif;
+}
+
+@mixin CaptionSRegular {
+  font-size: 0.75rem; //12px;
+  line-height: 1.12;
+  font-family: 'Suissent Intl Regular', sans-serif;
+}
+
+
+
+
+
+

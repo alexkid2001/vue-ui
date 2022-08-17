@@ -1,0 +1,111 @@
+@import "../../styles/typography";
+
+.radio {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 0.4rem 0;
+
+  &__input[type="radio"] {
+    appearance: none;
+    border: 1px solid var(--input-border);
+    background-color: var(--secondary1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    color-adjust: exact;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:checked {
+      background-image: url("data:image/svg+xml,%3csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='5' cy='5' r='5' fill='%23fff'/%3e%3c/svg%3e");
+      background-color: var(--primary);
+      border-color: var(--primary);
+
+      &:active {
+        background-color: var(--primary-active);
+        border-color: var(--primary-active);
+      }
+    }
+
+  }
+
+  &__label {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    @include CaptionLRegular;
+  }
+
+  &:hover {
+    .radio__input:not(:checked) {
+      background-color: var(--secondary5)
+    }
+  }
+
+  &.error {
+
+    .radio__input {
+      border-color: var(--danger25);
+      background-color: var(--danger2);
+
+      &:checked {
+        background-image: url("data:image/svg+xml,%3csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='5' cy='5' r='5' fill='%23FF7B7B'/%3e%3c/svg%3e");
+
+        &:active {
+          border-color: var(--danger25);
+        }
+      }
+    }
+
+    &:hover, &:checked {
+
+      .radio__input {
+        background-color: var(--danger5);
+      }
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+
+    .radio__input {
+      background-color: var(--secondary5);
+      border-color: var(--secondary5);
+
+      &:checked {
+        background-color: var(--secondary20);
+        border-color: var(--secondary20);
+      }
+    }
+  }
+
+  &--sm {
+    .radio__label {
+      @include CaptionSRegular;
+      margin-top: 0.3rem;
+    }
+  }
+
+  &--cost {
+    align-items: center;
+
+    .radio {
+
+      &__label {
+        margin-top: 0;
+        height: 36px;
+      }
+    }
+
+    .field {
+
+      &__input {
+        width: 66px;
+      }
+    }
+  }
+}

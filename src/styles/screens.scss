@@ -1,0 +1,45 @@
+$phone-width: 767px;
+$tablet-width: 1023px;
+$laptop-width: 1279px;
+
+@mixin phone {
+  @media screen and (max-width: $phone-width) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet-width) {
+    @content
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop-width) {
+    @content
+  }
+}
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == phone) {
+      @include phone {
+        @content
+      }
+    } @else if ($key == tablet) {
+      @include tablet {
+        @content
+      }
+    } @else if ($key == laptop) {
+      @include tablet {
+        @content
+      }
+    }
+  }
+}
+
+@mixin touchscreen {
+  @media (hover: none) and (pointer: coarse) {
+    @content
+  }
+}

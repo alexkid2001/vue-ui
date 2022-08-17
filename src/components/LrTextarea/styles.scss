@@ -1,0 +1,165 @@
+@import "../../styles/typography.scss";
+
+.lr-textarea {
+
+  &__wrap {
+    @include BodySRegular;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 102px;
+    border: 1px solid var(--secondary20);
+    border-radius: 0.5rem;
+    background-color: var(--secondary1);
+    color: var(--text);
+    color-adjust: exact;
+    transition: all .2s ease;
+    padding-top: 27px;
+
+    &:hover {
+      background-color: var(--secondary5);
+      border-color: var(--input-border-hover);
+    }
+
+    &:active, &:focus, &:focus-visible, &:focus-within {
+      background-color: var(--light100)
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 16px;
+    top: 18px;
+    color: var(--secondary50);
+    transition: all 0.3s ease;
+  }
+
+  &__input {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+    color-adjust: exact;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    transition: all .2s ease;
+    resize: none;
+
+    &:hover, &:active, &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:not(&:placeholder-shown) {
+      ~ .lr-textarea__label {
+        @include CaptionSRegular;
+        top: 9px;
+      }
+    }
+
+    &:active, &:focus {
+      ~ .lr-textarea__label {
+        @include CaptionSRegular;
+        top: 9px;
+      }
+      outline: none;
+    }
+
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &::placeholder {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__error-message {
+    display: inline-block;
+    margin-top: 0.5rem;
+    @include CaptionSRegular;
+    color: var(--danger35);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+
+    .lr-textarea__wrap {
+      border-color: var(--input-border);
+      background-color: var(--secondary1);
+    }
+    .lr-textarea__input {
+      color: var(--secondary50);
+    }
+  }
+
+  &__clean-button {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    fill: var(--secondary50);
+  }
+
+  &.lr-textarea--cleanable {
+
+    .lr-textarea__input {
+      padding-right: 40px;
+    }
+  }
+
+  &.lr-textarea--autosize {
+
+    .lr-textarea {
+
+      &__wrap {
+        min-height: 80px;
+        height: auto;
+      }
+    }
+  }
+
+  &.error {
+
+    .lr-textarea__wrap {
+      border: 1px solid var(--danger35);
+      background-color: var(--danger2);
+
+      &:hover {
+        background-color: var(--danger5);
+        border-color: var(--danger25);
+      }
+
+      &:focus, &:focus-within, &:focus-visible {
+        background-color: var(--danger2);
+        border-color: var(--danger25);
+        color: var(--text);
+      }
+    }
+
+    .lr-textarea__input {
+      color: var(--danger35);
+
+      &:placeholder-shown {
+        ~.lr-textarea__label {
+          color: var(--danger35);
+        }
+      }
+    }
+
+    .lr-textarea__label {
+      color: var(--danger35);
+    }
+  }
+}

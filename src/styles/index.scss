@@ -1,0 +1,28 @@
+@import "reset";
+@import "colors";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "screens";
+@import "typography";
+
+html, body {
+  min-width: 360px;
+}
+
+body {
+  font-family: "Suissent Intl Regular", sans-serif;
+  color: var(--text);
+  line-height: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+

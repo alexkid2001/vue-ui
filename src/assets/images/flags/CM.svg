@@ -1,0 +1,21 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="CM">
+<rect id="Mask" width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_26538_62328" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_26538_62328)">
+<rect id="Mask_3" x="13.3333" width="14.6667" height="20" fill="url(#paint0_linear_26538_62328)"/>
+<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 20H9.33333V0H0V20Z" fill="#059170"/>
+<path id="Rectangle 2 Copy" fill-rule="evenodd" clip-rule="evenodd" d="M9.33325 20H18.6666V0H9.33325V20Z" fill="#E21A30"/>
+<path id="Rectangle 2 Copy 2" fill-rule="evenodd" clip-rule="evenodd" d="M18.6667 20H28.0001V0H18.6667V20Z" fill="#FFDC44"/>
+<path id="Star 8" fill-rule="evenodd" clip-rule="evenodd" d="M14 11.2998L12.0407 12.6966L12.7636 10.4016L10.8298 8.96978L13.2359 8.94812L14 6.6665L14.7641 8.94812L17.1702 8.96978L15.2364 10.4016L15.9593 12.6966L14 11.2998Z" fill="#FFDC42"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_26538_62328" x1="13.3333" y1="0" x2="13.3333" y2="20" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFDC44"/>
+<stop offset="1" stop-color="#FDD216"/>
+</linearGradient>
+</defs>
+</svg>

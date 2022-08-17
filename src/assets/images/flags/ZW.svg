@@ -1,0 +1,20 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ZW">
+<rect id="Mask" x="0.25" y="0.25" width="27.5" height="19.5" rx="1.75" fill="white" stroke="#E7E8EA" stroke-width="0.5"/>
+<mask id="mask0_26538_63864" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" x="0.25" y="0.25" width="27.5" height="19.5" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
+</mask>
+<g mask="url(#mask0_26538_63864)">
+<path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M-1.33325 20V0H8.14199e-05L13.3334 10L8.14199e-05 20H-1.33325Z" fill="#369D0C"/>
+<path id="Combined Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M-3.33325 20V0H-1.99992L11.3334 10L-1.99992 20H-3.33325Z" fill="#262626"/>
+<path id="Combined Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M-1.33325 20V0H8.14199e-05L13.3334 10L8.14199e-05 20H-1.33325Z" fill="#FFD40E"/>
+<path id="Star 8" fill-rule="evenodd" clip-rule="evenodd" d="M4.00008 11.2998L2.0408 12.6966L2.76371 10.4016L0.829893 8.96978L3.23596 8.94812L4.00008 6.6665L4.7642 8.94812L7.17027 8.96978L5.23645 10.4016L5.95937 12.6966L4.00008 11.2998Z" fill="url(#paint0_linear_26538_63864)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_26538_63864" x1="0.666748" y1="6.6665" x2="0.666748" y2="13.3332" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F12F1F"/>
+<stop offset="1" stop-color="#DE2010"/>
+</linearGradient>
+</defs>
+</svg>

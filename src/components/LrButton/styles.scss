@@ -1,0 +1,424 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/colors";
+@import "../../styles/typography.scss";
+@import "../LrIco/styles";
+
+$border-radius: 12px;
+
+@mixin btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: space-evenly;
+  font-size: 16px;
+  position: relative;
+  @include rect(auto, 56px);
+  padding: 0 24px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: $border-radius;
+  color: var(--light100);
+  cursor: pointer;
+  fill: var(--light100);
+
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+
+  &:active {
+    background-color: var(--primary-active);
+  }
+}
+
+@mixin btn-slider {
+  @include square(48px);
+  border-radius: 50%;
+  background-color: white;
+  color: var(--text);
+  fill: var(--text);
+  display: flex;
+  align-items: center;
+
+  &.btn-s {
+    @include square(32px)
+  }
+}
+
+.btn {
+  @include btn;
+
+  &:not(.btn-ico):not(.btn-link) {
+
+    .ico {
+      @include ico-size(24px, 24px);
+    }
+  }
+
+  //
+  //svg {
+  //  fill: var(--light100);
+  //}
+
+  &-m {
+    @include rect(auto, 48px);
+    padding: 5px 24px;
+
+    &:not(.btn-ico) {
+
+      .ico {
+        @include ico-size(20px, 20px);
+      }
+    }
+  }
+
+  &-s {
+    @include rect(auto, 32px);
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 2px 12px;
+    gap: 5.5px;
+
+    &:not(.btn-ico) {
+      .ico {
+        @include ico-size(18px, 18px);
+      }
+    }
+  }
+
+  &-cancel {
+    background-color: var(--danger35);
+
+    &:hover {
+      background-color: var(--danger60);
+    }
+
+    &:active {
+      background-color: var(--danger70);
+    }
+  }
+
+  &-disabled {
+    pointer-events: none;
+    cursor: no-drop;
+    background-color: var(--secondary20);
+
+    &:hover,
+    &:active {
+      background-color: var(--secondary20);
+    }
+
+    svg {
+      fill: var(--light100);
+    }
+
+    &.btn-tertiary {
+      background-color: var(--secondary10);
+      color: var(--secondary40);
+      fill: var(--secondary40);
+    }
+  }
+
+  &-secondary {
+    border: 2px solid var(--primary);
+    background-color: white;
+    color: var(--primary);
+    fill: var(--primary);
+
+    &:hover,
+    &:active {
+      background-color: white;
+    }
+
+    &:hover {
+      border-color: var(--primary-hover);
+      color: var(--primary-hover);
+      fill: var(--primary-hover);
+    }
+
+    &:active {
+      border-color: var(--primary-active);
+      color: var(--primary-active);
+      fill: var(--primary-active);
+    }
+
+    &.btn-disabled {
+      cursor: default;
+      border-color: var(--secondary20);
+      color: var(--secondary20);
+      fill: var(--secondary20);
+
+      &:hover,
+      &:active {
+        border-color: var(--secondary20);
+        color: var(--secondary20);
+        fill: var(--secondary20);
+      }
+    }
+  }
+  
+  &-tertiary {
+    background-color: var(--secondary10);
+    border: none;
+    color: var(--text);
+    fill: var(--text);
+
+    &:hover {
+      background-color: var(--secondary20);
+      border: none;
+      color: var(--text);
+      fill: var(--text);
+    }
+
+    &:active {
+      background-color: var(--secondary30);
+      border: none;
+      color: var(--text);
+      fill: var(--text);
+    }
+  }
+
+  //&-with-ico {
+  //  //width: 120px;
+  //
+  //  &.btn-m {
+  //    //width: 115px;
+  //  }
+  //
+  //  &.btn-s {
+  //    //width: 89px;
+  //  }
+  //}
+
+  &-ico {
+    @include square(48px);
+    padding: 0;
+
+    .ico {
+      @include ico-size(28px, 28px);
+    }
+
+    &.btn-m {
+      @include square(48px);
+
+      .ico {
+        @include ico-size(20px, 20px);
+      }
+    }
+
+    &.btn-s {
+      @include square(32px);
+
+      .ico {
+        @include ico-size(20px, 20px);
+      }
+    }
+
+    &.btn-cancel {
+      background: transparent;
+      color: var(--danger35);
+      fill: var(--danger35);
+
+      &:hover {
+        color: var(--danger60);
+        fill: var(--danger60);
+      }
+
+      &:active {
+        color: var(--danger70);
+        fill: var(--danger70);
+      }
+    }
+  }
+
+  &-menu {
+    @include square(56px);
+    background-color: var(--brand5);
+
+    &:hover,
+    &:active {
+      background-color: var(--brand5);
+    }
+
+    &_line {
+      width: 20px;
+      height: 2px;
+      background-color: white;
+      margin: 6px 0;
+    }
+  }
+
+  &-slider {
+    @include square(48px);
+    border-radius: 50%;
+    background-color: white;
+    color: var(--text);
+    fill: var(--text);
+
+    &:hover,
+    &:active {
+      .ico-slider {
+        &-next,
+        &-prev {
+
+          &:before {
+            color: white;
+          }
+
+          svg {
+            fill: var(--light100);
+          }
+        }
+      }
+    }
+
+    &.btn-s {
+      @include square(32px)
+    }
+  }
+
+  &-filter {
+    width: 156px;
+    height: 40px;
+    background-color: white;
+    color: var(--text);
+    fill: var(--text);
+
+    span {
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--light100);
+      fill: var(--light100);
+
+      .ico-close {
+        &:before {
+          color: white;
+        }
+      }
+    }
+
+    .ico-close {
+      &:before {
+        mask-size: 10px
+      }
+    }
+
+    &.btn-m {
+      width: 150px;
+    }
+
+    &.btn-s {
+      font-size: 14px;
+      width: 131px;
+      height: 33px;
+
+      .ico-close {
+        &:before {
+          mask-size: 8.5px
+        }
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &-chat {
+    @include square(56px);
+    background-color: var(--brand2);
+
+    &:hover,
+    &:active {
+      background-color: var(--brand2);
+    }
+
+    .ico-chat {
+      @include rect(26px, 21px);
+      fill: var(--light100);
+      &:before {
+        color: white;
+        @include rect(26px, 21px);
+      }
+    }
+  }
+
+  &-link {
+    align-items: flex-end;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    color: var(--text);
+    fill: var(--text);
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: var(--primary-hover);
+      fill: var(--primary-hover);
+    }
+
+    &:active {
+      color: var(--primary-active);
+      fill: var(--primary-active);
+    }
+
+    &.btn-disabled {
+      color: var(--secondary50);
+      fill: var(--secondary50);
+    }
+
+    &.btn-s {
+      @include CaptionLRegular;
+      align-items: flex-start;
+
+      .ico {
+        @include square(16px);
+
+        //&-reset {
+        //  &:before {
+        //    @include rect(14.5px, 12px);
+        //  }
+        //}
+      }
+    }
+
+    .ico {
+      width: 18px;
+      height: 18px;
+      //@include square(18px);
+
+      //&-reset {
+      //  &:before {
+      //    @include rect(16.31px, 13.5px);
+      //  }
+      //}
+      //
+      //&-chevron_down {
+      //  &:before {
+      //    @include rect(11.25px, 6.41px);
+      //  }
+      //}
+    }
+
+    &.link-red {
+      color: var(--danger35);
+    }
+
+    &.btn--brand-color {
+      color: var(--primary);
+      fill: var(--primary)
+    }
+
+    &.btn--grey-color {
+      color: var(--secondary50);
+      fill: var(--secondary50);
+    }
+  }
+}

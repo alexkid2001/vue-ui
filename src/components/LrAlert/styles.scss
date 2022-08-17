@@ -1,0 +1,46 @@
+@import "../../styles/typography.scss";
+
+.lr-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px;
+    padding: 40px 16px;
+    background: var(--light100);
+    border-radius: 8px;
+    position: relative;
+    max-width: 400px;
+    width: 400px;
+  }
+
+  &__title {
+    @include TitleMMedium;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  &__subtitle {
+    @include BodySRegular;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 24px;
+
+    svg {
+      width: 104px;
+      height: 104px;
+    }
+  }
+
+  .lr-close-button {
+    color: var(--text);
+  }
+}

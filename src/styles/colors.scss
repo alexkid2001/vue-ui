@@ -1,0 +1,64 @@
+:root {
+  --brand1: #0DAD36;
+  --brand2: #00C2FF;
+  --brand3: #FF3565;
+  --brand4: #5517BB;
+  --brand5: #190041;
+  --brand6: #FF8A01;
+
+  --primary: #0DAD36;
+  --primary-hover: #0C942E;
+  --primary-active: #0A7A26;
+
+  --light: 255, 255, 255;
+  --light100: rgba(var(--light), 1);
+  --light90: rgba(var(--light), .9);
+  --light80: rgba(var(--light), .8);
+  --light70: rgba(var(--light), .7);
+  --light60: rgba(var(--light), .6);
+  --light50: rgba(var(--light), .5);
+  --light40: rgba(var(--light), .4);
+  --light30: rgba(var(--light), .3);
+  --light20: rgba(var(--light), .2);
+  --light10: rgba(var(--light), .1);
+
+  --dark: 0, 0, 0;
+  --dark90: rgba(var(--dark), .9);
+  --dark80: rgba(var(--dark), .8);
+  --dark70: rgba(var(--dark), .7);
+  --dark60: rgba(var(--dark), .6);
+  --dark50: rgba(var(--dark), .5);
+  --dark40: rgba(var(--dark), .4);
+  --dark30: rgba(var(--dark), .3);
+  --dark20: rgba(var(--dark), .2);
+  --dark10: rgba(var(--dark), .1);
+  --dark5: rgba(var(--dark), .05);
+  --dark1: rgba(var(--dark), .01);
+
+  --secondary: 0, 0, 0;
+  --secondary90: rgba(var(--secondary), .9);
+  --secondary80: rgba(var(--secondary), .8);
+  --secondary70: rgba(var(--secondary), .7);
+  --secondary60: rgba(var(--secondary), .6);
+  --secondary50: rgba(var(--secondary), .5);
+  --secondary40: rgba(var(--secondary), .4);
+  --secondary30: rgba(var(--secondary), .3);
+  --secondary20: rgba(var(--secondary), .2);
+  --secondary10: rgba(var(--secondary), .1);
+  --secondary5: rgba(var(--secondary), .05);
+  --secondary1: rgba(var(--secondary), .01);
+
+  --text: #1A2633;
+  --content-link: #2276B2;
+
+  --danger70: #990000;
+  --danger60: #CC0000;
+  --danger35: #FF4E4E;
+  --danger25: #FF8080;
+  --danger5: #FFE5E5;
+  --danger2: #FFF5F5;
+
+  --input-border: #CCCCCC;
+  --input-border-hover: #B2B2B2;
+  --blue: #E9F2F7
+}

@@ -1,0 +1,16 @@
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ZA">
+<rect id="Mask" width="28" height="20" rx="2" fill="#06A86E"/>
+<mask id="mask0_26538_63855" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect id="Mask_2" width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_26538_63855)">
+<path id="Rectangle 83" fill-rule="evenodd" clip-rule="evenodd" d="M0 2.6665L9.33333 9.99984L0 17.3332V2.6665Z" fill="#FFBF2E"/>
+<path id="Rectangle 83 Copy 5" fill-rule="evenodd" clip-rule="evenodd" d="M-1.33325 3L7.66675 10L-1.33325 17V3Z" fill="#262626"/>
+<path id="Rectangle 83 Copy" fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 8L2.66675 0H28.0001V8H12.0001Z" fill="white"/>
+<path id="Rectangle 83 Copy 3" fill-rule="evenodd" clip-rule="evenodd" d="M12.3333 6.66667L4.33325 0H27.9999V6.66667H12.3333Z" fill="#F44E46"/>
+<path id="Rectangle 83 Copy 2" fill-rule="evenodd" clip-rule="evenodd" d="M2.66675 20H28.0001V12H12.0001L2.66675 20Z" fill="white"/>
+<path id="Rectangle 83 Copy 4" fill-rule="evenodd" clip-rule="evenodd" d="M4.33325 20.0002H27.9999V13.3335H12.3333L4.33325 20.0002Z" fill="#072CB4"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,231 @@
+@import "../../styles/typography";
+
+.select {
+  position: relative;
+  width: 100%;
+
+  &__field {
+    display: flex;
+
+  }
+
+  &__dropdown {
+    user-select: none;
+    background-color: var(--light100);
+    border: 1px solid var(--secondary30);
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px var(--secondary10);
+    max-height: 25rem;
+    overflow: hidden auto;
+    z-index: 11;
+
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    right: 0;
+
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+
+    &[data-scrollbar] {
+      position: absolute;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid var(--secondary20);
+    }
+
+    &-city {
+      @include CaptionSMedium;
+      padding-right: 1.5rem;
+    }
+
+  }
+
+  &__item {
+    cursor: pointer;
+    padding: 1rem;
+    @include BodySRegular;
+    transition: background-color .3s ease;
+
+    &.select, &:hover, &:focus, &:focus-visible {
+      background-color: var(--secondary5);
+    }
+  }
+
+  .field__button {
+    transition: all 0.3s ease;
+  }
+
+  &--phone-field {
+
+    .field__input {
+      border-radius: 0.75rem 0 0 0.75rem;
+    }
+  }
+
+  &--search-place {
+
+    .field {
+
+      &__input {
+        background-color: var(--primary);
+        border-radius: 0.75rem 0 0 0.75rem;
+        color: var(--light100);
+        border: none;
+        height: 4.375rem; // 70px
+
+        &:not(&:placeholder-shown)  {
+          ~ .field__label {
+            @include CaptionSRegular;
+            top: 1.6rem;
+          }
+          padding-top: 1.5rem;
+          border: none;
+          background-color: var(--primary);
+          outline: none;
+
+          &:hover {
+            background-color: var(--primary);
+            border: none;
+          }
+
+          &:active, &:focus {
+            background-color: var(--light100);
+            color: var(--text);
+            border: 1px solid var(--secondary30);
+
+            ~ .field__label {
+              color: var(--secondary50);
+            }
+          }
+        }
+      }
+
+      &__label {
+        color: var(--light100);
+        top: 2.4rem;
+      }
+    }
+
+    &.select--return {
+
+      .field {
+
+        &__input {
+          border-radius: 0 0.75rem 0.75rem 0;
+        }
+      }
+    }
+
+    &:not(&.select--autocomplete) {
+
+      .field__input {
+        color: var(--text);
+      }
+    }
+
+    &.open {
+
+      .field__input {
+        background: var(--light100);
+        color: var(--text);
+        border: 1px solid var(--secondary30);
+      }
+    }
+  }
+
+  &.open {
+
+    &:not(&.select--autocomplete) {
+
+      .field__input {
+        color: var(--secondary50);
+      }
+    }
+
+    .field__button.ico-chevron_down {
+      transform: rotate(180deg);
+    }
+
+    .field.disabled .field__input {
+      background-color: var(--light100);
+    }
+  }
+
+  &:not(.open) {
+
+    .field__input {
+      color: var(--text);
+    }
+  }
+
+  &--medium {
+    .select__field {
+      max-height: 40px;
+    }
+    .select__item {
+      padding-top: 8px;
+      padding-bottom: 6px;
+      @include CaptionLRegular;
+    }
+  }
+
+  &--small {
+    .select__field {
+      max-height: 32px;
+    }
+    .select__item {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      @include CaptionLRegular;
+    }
+  }
+
+  &--dark-theme {
+
+    &:not(.open) {
+
+      .field__input {
+        color: var(--light100);
+      }
+    }
+
+    &.open {
+
+      &:not(&.select--autocomplete) {
+
+        .field__input {
+          color: var(--light50);
+        }
+      }
+
+      .field.disabled .field__input {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+  }
+}
+
+.change-search-data {
+  margin-left: auto;
+  @include CaptionSRegular;
+  max-width: 10rem;
+  text-align: right;
+}
+

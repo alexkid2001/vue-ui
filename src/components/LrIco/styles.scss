@@ -1,0 +1,93 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
+
+@mixin ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+
+  svg {
+    width: $icon-inner-size;
+    height: $icon-inner-size;
+  }
+
+  //&:before {
+  //  background: currentColor;
+  //  width: $icon-inner-size;
+  //  height: $icon-inner-size;
+  //  content: "";
+  //  mask-size: contain;
+  //  -webkit-mask-size: contain;
+  //  mask-repeat: no-repeat;
+  //  -webkit-mask-repeat: no-repeat;
+  //  mask-position: center;
+  //  -webkit-mask-position: center;
+  //  color: inherit;
+  //}
+}
+
+//@mixin ico-($icon) {
+//  &:before {
+//    mask-image: url("../../assets/images/icons/#{$icon}.svg");
+//  }
+//}
+
+@mixin ico-size($width, $height) {
+  @include rect($width, $height);
+}
+
+.ico {
+  @include ico;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-small, &-sm {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+  }
+
+  //@each $svg in arrow_right, arrow_up, bus, calendar, chat, checked, checked_checkbox, chevron_down, chevron_left,
+  //              chevron_right, chevron_up, city, close, euro, eye_closed, eye_open, filter, hotel, info, info_filled,
+  //              link, logo, mail, menu, messages, minus, new_window, pin, plane, plus, question, question_filled,
+  //              reply, reset, search, settings, ship, train, card, dashboard, fb, fb_messenger, history, instagram,
+  //              like, telegram, twitter, viber, vk, warning, youtube, car, clients, couple, debts, equipment, exit,
+  //              geography, pin_road, doc, reset_demo, statistic, travel_mode, user, like_filled, done, download,
+  //              money, bin, add_filled, add, help, trash, upload {
+  //  &-#{$svg} {
+  //    &:before {
+  //      mask-image: url("../../assets/images/icons/#{$svg}.svg");
+  //      -webkit-mask-image: url("../../assets/images/icons/#{$svg}.svg");
+  //
+  //    }
+  //  }
+  //}
+
+  &-slider {
+    &-next {
+      &:before {
+        mask-image: url("../../assets/images/icons/chevron_right.svg");
+        -webkit-mask-image: url("../../assets/images/icons/chevron_right.svg");
+        mask-size: 8.55px 15px;
+      }
+    }
+
+    &-prev {
+      &:before {
+        mask-image: url("../../assets/images/icons/chevron_left.svg");
+        -webkit-mask-image: url("../../assets/images/icons/chevron_left.svg");
+        mask-size: 8.55px 15px;
+      }
+    }
+  }
+}
