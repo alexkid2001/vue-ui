@@ -1,4 +1,4 @@
-# lr-ui (Localrent.com UI-kit)
+# lr-ui (Localrent UI-kit)
 
 ## Принципы
 
